@@ -1,0 +1,177 @@
+/*Global styling*/
+body {
+    margin: 0;
+    background-color: #000; /* black like the night sky */
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* prevents scrollbars when zooming */
+    color: white;
+}
+
+#plot1 {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Splash Screen*/
+#splash {
+    position: fixed;
+    inset: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.splash-content {
+    text-align: center;
+    color: white;
+}
+
+.splash-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.splash-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#enter-btn {
+    padding: 12px 22px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/*Info Button Information */
+.info-button {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #111827;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* Dark overlay behind modal */
+.modal-overlay {
+    display: none; /* hidden by default */
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+/* The info window itself */
+.modal-content {
+    max-width: 550px;
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: #111827; /* dark navy panel */
+    color: #f9fafb; /* light text */
+    padding: 20px 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.modal-content h2,
+.modal-content h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.modal-content p {
+    line-height: 1.4;
+    margin-bottom: 0.7rem;
+}
+
+/* X button */
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #f9fafb;
+}
+
+/*Star Styling (maybe take this off)*/
+.stars-bright circle {
+    fill: #ffffff;
+    opacity: 0.9;
+}
+
+.stars-medium circle {
+    fill: #cccccc;
+    opacity: 0.5;
+}
+
+.stars-faint circle {
+    fill: #888888;
+    opacity: 0.3;
+}
+
+/*Axis Styling */
+.axis line,
+.axis path {
+    stroke: #555;
+}
+
+.axis text {
+    fill: #ccc;
+    font-size: 12px;
+}
+
+/*Grid lines */
+.gridline {
+    stroke: #333;
+    stroke-width: 1;
+    opacity: 0.3;
+}
+
+/*Labeled star detail*/
+#star-detail {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    width: 260px;
+    padding: 10px 12px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    color: #f9fafb;
+    font-size: 13px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    z-index: 900;
+}
+
+#star-detail h3 {
+    margin: 0 0 6px 0;
+    font-size: 16px;
+}
+
+#star-meta {
+    margin-top: 6px;
+    line-height: 1.4;
+}
