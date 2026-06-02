@@ -6,7 +6,7 @@ An interactive web-based application designed to explore and visualize stellar d
 
 This project provides an interactive platform for analyzing star-related data using modern web technologies. Users can explore patterns, relationships, and distributions within astronomical datasets through responsive and engaging visualizations.
 
-Interactive data visualization tools allow users to better understand complex datasets by enabling real-time filtering, exploration, and manipulation of data. :contentReference[oaicite:1]{index=1}
+Interactive data visualization tools allow users to better understand complex datasets by enabling real-time filtering, exploration, and manipulation of data
 
 ---
 
